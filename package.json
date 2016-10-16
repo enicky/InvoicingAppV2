@@ -1,0 +1,14 @@
+{
+  "name": "invoicingappv2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install": "git submodule update --init --recursive && cd backend && npm install && cd ../frontendv2 && npm install",
+    "start": "(cd backend && sails lift) & (cd frontendv2 && npm start)",
+    "test": "cd backend && mocha"
+  },
+  "author": "Nicky Eichmann <ne@cegeka.be>",
+  "license": "ISC",
+  "dependencies": {}
+}
